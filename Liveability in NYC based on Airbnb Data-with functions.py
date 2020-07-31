@@ -70,7 +70,6 @@ airbnb_ng_average
 
 # Now,let's display them in a graph for a better understanding.
 def lineplot(rooms):
-
     for room in rooms:
         sns.lineplot(x='neighbourhood_group', y='price',
                      data=airbnb_ng_average[airbnb_ng_average['room_type'] == room],
